@@ -3,39 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan Application Dashboard</title>
+    <title>Loan Status Prediction</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #f0f2f5;
         }
         .navbar {
+            background: linear-gradient(90deg, #ff8c00, #e63946);
             margin-bottom: 20px;
+            color: white;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
         }
         .dashboard-card {
-            background-color: white;
+            background: linear-gradient(135deg, #ffffff, #f0f2f5);
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            color: #e63946;
         }
         .form-group label {
             font-weight: bold;
+            color: #333;
         }
         .btn-submit {
-            background-color: #28a745;
+            background: linear-gradient(90deg, #ff8c00, #e63946);
             color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .btn-submit:hover {
-            background-color: #218838;
+            background: linear-gradient(90deg, #e63946, #ff8c00);
         }
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Loan Application</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Loan Status Prediction Portal</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,9 +53,6 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Loan Status</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Profile</a>
@@ -59,7 +66,7 @@
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
                 <div class="dashboard-card">
-                    <h3 class="text-center mb-4">Enter Loan Application Details</h3>
+                    <h3 class="text-center mb-4">Predict Loan Approval</h3>
                     <form method="POST">
                         <div class="form-group">
                             <label for="gender">Gender (0 for Male, 1 for Female)</label>
