@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .dashboard-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-submit {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-submit:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Loan Application</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Loan Status</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="dashboard-card">
+                    <h3 class="text-center mb-4">Enter Loan Application Details</h3>
+                    <form method="POST">
+                        <div class="form-group">
+                            <label for="gender">Gender (0 for Male, 1 for Female)</label>
+                            <input type="number" class="form-control" id="gender" name="gender" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="married">Married (0 for No, 1 for Yes)</label>
+                            <input type="number" class="form-control" id="married" name="married" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dependents">Dependents</label>
+                            <input type="number" class="form-control" id="dependents" name="dependents" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="education">Education (0 for Graduate, 1 for Not Graduate)</label>
+                            <input type="number" class="form-control" id="education" name="education" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="self_employed">Self Employed (0 for No, 1 for Yes)</label>
+                            <input type="number" class="form-control" id="self_employed" name="self_employed" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loan_amount">Loan Amount</label>
+                            <input type="number" class="form-control" id="loan_amount" name="loan_amount" step="any" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loan_amount_term">Loan Amount Term</label>
+                            <input type="number" class="form-control" id="loan_amount_term" name="loan_amount_term" step="any" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="credit_history">Credit History (0 for Bad, 1 for Good)</label>
+                            <input type="number" class="form-control" id="credit_history" name="credit_history" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="property_area">Property Area (0 for Urban, 1 for Rural)</label>
+                            <input type="number" class="form-control" id="property_area" name="property_area" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="total_income">Total Income</label>
+                            <input type="number" class="form-control" id="total_income" name="total_income" step="any" required>
+                        </div>
+                        <button type="submit" class="btn btn-submit btn-block">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
