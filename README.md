@@ -17,7 +17,9 @@
 **Introduction:**
 
 Loan Application Status Prediction involves the use of predictive models to assess the likelihood of a loan being approved or rejected based on applicant data. By leveraging historical data and applying algorithms to uncover patterns, machine learning can make accurate predictions about the approval status of new loan applications. 
-The complete video of project is available on YouTube: Loan status Prediction using Machine Learning and deployed to GCP (youtube.com)
+
+The complete video of project is available on YouTube: [Loan status Prediction using Machine Learning and deployed to GCP (youtube.com)](https://www.youtube.com/watch?v=ej_5DrcL8Jo)
+
 GitHub Link: G23AI2032/FinalVCCProject (github.com)
 
 **Problem Statement:**
