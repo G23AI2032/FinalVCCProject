@@ -96,11 +96,10 @@ Generated PKL file from google collab notebook.
      For Scale-up and down we have deployed the same application to Kubernetes.
      On running the application by expose services in Kubernetes,details of the load performance results, if our application is on with more than 50% utilization. Application automatically scales up.
 
-         
-     ![image](https://github.com/user-attachments/assets/3ae812d7-c2a9-4f39-9b27-eecdb9a8b580)
+      ![image](https://github.com/user-attachments/assets/32673441-27fb-4982-8cec-b2ff504ea05a)
+      ![image](https://github.com/user-attachments/assets/d179f03b-ee0d-403e-98a2-d75b5232a2dd)
 
-     ![image](https://github.com/user-attachments/assets/a5977677-bbcc-4d07-b401-62cafd5c7275)
-     
+
  **Deploy the same application to GKE to enable autoscaling.**
  
       step1: set the region
@@ -142,7 +141,7 @@ Generated PKL file from google collab notebook.
 
 2.On click of "Submit", applicant will be prompted with a message "Approved" or "Rejected" upon prediction.
 
-**Author
+**Author**
 
 G23AI2032**
  
